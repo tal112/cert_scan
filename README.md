@@ -8,7 +8,7 @@ I do not take responsibility for any misuse or illegal action/use of this code.
 
 ## Description
 
-Scans a given url for TLS versions and ciphers using nmap scripts
+Scans a given URL for TLS versions and ciphers using nmap scripts
 
 ## Use
 
