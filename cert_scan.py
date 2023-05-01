@@ -1,5 +1,4 @@
 import sys
-import os
 import subprocess
 import pandas as pd
 
@@ -42,7 +41,6 @@ try:
     print("Scanning {}".format(sys.argv[1]))
     command = "nmap -sV --script ssl-enum-ciphers -p 443 {}".format(sys.argv[1])
     result = subprocess.run([command], shell=True, capture_output=True, text=True)
-    #os.system("nmap -sV --script ssl-enum-ciphers -p 443 {}".format(sys.argv[1]))
     result_str = str(result)
    
     tls10 = result_str.find("TLSv1.0")
